@@ -1,16 +1,31 @@
-function dobrarValores(array) {}
+function dobrarValores(array) {
+  return array.map(valor => valor * 2);
+}
 
-function filtrarPares(array) {}
+function filtrarPares(array) {
+  return array.filter(valor => valor % 2 === 0);
+}
 
-function somarElementos(array) {}
+function somarElementos(array) {
+  return array.reduce((soma,valor) => soma + valor, 0 );
+}
 
-function reverterArray(array) {}
+function reverterArray(array) {
+  return array.slice().reverse();
+}
 
-function removerDuplicados(array) {}
+function removerDuplicados(array) {
+  return Array.from(new Set(array));
+}
 
-function concatenarArrays(array1, array2) {}
+function concatenarArrays(array1, array2) {
+  return array1.concat(array2);
+}
 
-function maiorNumero(array) {}
+function maiorNumero(array) {
+  return Math.max(...array)
+}
+
 
 module.exports = {
   dobrarValores,
